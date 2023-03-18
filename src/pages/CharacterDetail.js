@@ -9,8 +9,9 @@ function CharacterDetail() {
   const { id } = useParams();
 
   useEffect(() => {
+    const BASE_URL = "https://rickandmortyapi.com/api/character/";
     axios
-      .get(`https://rickandmortyapi.com/api/character/${id}`)
+      .get(BASE_URL + `${id}`)
       .then((response) => {
         setCharacter(response.data);
       })

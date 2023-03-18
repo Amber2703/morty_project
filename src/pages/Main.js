@@ -12,6 +12,7 @@ function Main() {
 
   useEffect(() => {
     const fetchCharacters = async () => {
+      const BASE_URL = "https://rickandmortyapi.com/api/character/";
       let allCharacters = [];
       let pageNum = 1;
       let totalPages = 1;
@@ -19,7 +20,7 @@ function Main() {
       // Fetch all pages of characters from API
       while (pageNum <= totalPages) {
         const response = await axios.get(
-          `https://rickandmortyapi.com/api/character?page=${pageNum}&limit=20`
+          BASE_URL + `?page=${pageNum}&limit=20`
         );
         allCharacters = allCharacters.concat(response.data.results);
         pageNum++;
