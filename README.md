@@ -10,10 +10,10 @@ The layout of the pages should match the design provided in the Figma link: http
 Technologies Used 
 
 This project was developed using the following technologies:
-ReactJS 
-React Router 
-Axios 
-HTML/CSS 
+ReactJS, 
+React Router, 
+Axios, 
+HTML/CSS, 
 Netlify (for deployment) 
 
 Getting Started 
